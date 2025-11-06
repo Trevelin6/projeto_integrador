@@ -56,6 +56,7 @@ public class Servidor {
             System.out.println("Conexão encerrada.");
 
         } catch (IOException e) {
+            //catch generico
             e.printStackTrace();
         }
     }
