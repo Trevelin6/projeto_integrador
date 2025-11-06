@@ -38,7 +38,7 @@ public class Servidor {
             }
 
             Arrays.sort(numeros);
-            //realiza a ordenação
+            //realiza a ordenação usando quicksort (uma variação com 2 pivos)
             System.out.println("Ordenando...");
 
             StringBuilder resposta = new StringBuilder();
