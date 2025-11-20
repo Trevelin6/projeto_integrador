@@ -1,3 +1,9 @@
+/*
+-Felipe Trevelin de Godoi, 211338
+-Kaiky Guizelini Santos da Silva, 075802
+-Gabriel Henrique Lima dos Santos Galis, 211341
+ */
+
 import java.io.*;
 //gerenciamento de input/output
 import java.net.*;
