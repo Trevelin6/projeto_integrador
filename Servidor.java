@@ -20,7 +20,10 @@ public class Servidor {
             //cria um Server-Socket atrelado á porta
             //por ser aberto como parametro no try-catch, vai ser fechado sozinho
             System.out.println("Servidor iniciado na porta " + porta);
-            System.out.println("Aguardando conexão...");
+
+            while(true){
+            //laço para permitir conexão de múltiplos clientes em sequência
+                System.out.println("Aguardando conexão...");
 
             Socket cliente = servidor.accept();
             //interrompe a execução do código até que um cliente se conecte
@@ -60,6 +63,8 @@ public class Servidor {
             cliente.close();
             //fecha o socket unico do cliente
             System.out.println("Conexão encerrada.");
+            }
+            
 
         } catch (IOException e) {
             //catch generico
